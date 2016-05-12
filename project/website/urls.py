@@ -19,12 +19,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from . import views
 
+<<<<<<< HEAD:project/website/urls.py
 
-from . import views
+=======
+>>>>>>> 6917e2f527c8c4aae7f08c0009830865e7f3e1a5:project/website/urls.py
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^community/', include('community.urls', namespace='community')),
     url(r'^', include('common.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
